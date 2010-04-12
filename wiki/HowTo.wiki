@@ -1,6 +1,10 @@
 #summary How to use
 #labels Featured,Phase-Deploy
 
+= Introduction =
+
+You can use this Gentoo Repository on your own risk without any warranty.
+
 = Paludis =
 
 I use Paludis instead of Portage, so here is instructions for Paludis.
