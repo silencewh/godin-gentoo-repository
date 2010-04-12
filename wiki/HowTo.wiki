@@ -3,7 +3,8 @@
 
 = Paludis =
 
-[http://paludis.pioto.org/ Paludis documentation]
+I use paludis instead of portage, so here is instructions for paludis.
+You can read more info about Paludis from [http://paludis.pioto.org/ official site].
 
 == Add repository ==
 Create file */etc/paludis/repositories/godin.conf* :
