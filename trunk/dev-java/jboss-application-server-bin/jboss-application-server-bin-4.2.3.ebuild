@@ -5,7 +5,7 @@ HOMEPAGE="http://www.jboss.org/jbossas/"
 SRC_URI="mirror://sourceforge/jboss/jboss-${PV}.GA-jdk6.zip"
 
 LICENSE="LGPL-2.1"
-SLOT="4.2"
+SLOT="4.2.3"
 KEYWORDS="x86"
 
 IUSE="doc"
