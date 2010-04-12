@@ -12,6 +12,7 @@ I use Paludis instead of Portage, so here is instructions for Paludis.
 You can read more about Paludis from [http://paludis.pioto.org/ official site].
 
 == Add repository ==
+
 Create file */etc/paludis/repositories/godin.conf* :
 {{{
 master_repository = gentoo
@@ -33,3 +34,7 @@ Optionally you can unmask everything from this repository by adding following li
 {{{
 */*::godin ~x86
 }}}
+
+== Useful stuff ==
+
+ * [http://git.pioto.org/gitweb/paludis-scripts.git Miscellaneous scripts related to Paludis.]
