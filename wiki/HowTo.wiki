@@ -46,7 +46,7 @@ Since I don't use Layman, it wasn't tested.
 Edit your */etc/layman/layman.cfg* and add new overlay list :
 {{{
 overlays  : http://www.gentoo.org/proj/en/overlays/layman-global.txt
-            https://godin-gentoo-repository.googlecode.com/svn/trunk/layman.xml
+            http://godin-gentoo-repository.googlecode.com/svn/trunk/layman.xml
 }}}
 
 Add to sync list :
