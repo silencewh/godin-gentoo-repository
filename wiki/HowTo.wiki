@@ -21,3 +21,8 @@ Sync:
 mkdir -p /var/paludis/repositories/godin/.cache/{metadata,names}
 paludis --sync x-godin
 }}}
+
+Optionally you can unmask everything from this repository by adding following line to */etc/paludis/keywords.conf* :
+{{{
+*/*::godin ~x86
+}}}
