@@ -18,7 +18,7 @@ Create file */etc/paludis/repositories/godin.conf* :
 master_repository = gentoo
 importance = 20
 location = ${ROOT}/var/paludis/repositories/godin
-sync = svn+http://godin-gentoo-repository.googlecode.com/svn/trunk/
+sync = svn+http://godin-gentoo-repository.googlecode.com/svn/trunk/repository/
 format = ebuild
 names_cache = ${location}/.cache/names
 write_cache = ${location}/.cache/metadata
