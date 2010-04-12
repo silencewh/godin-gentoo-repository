@@ -24,7 +24,7 @@ names_cache = ${location}/.cache/names
 write_cache = ${location}/.cache/metadata
 }}}
 
-Sync:
+Sync :
 {{{
 mkdir -p /var/paludis/repositories/godin/.cache/{metadata,names}
 paludis --sync x-godin
@@ -38,3 +38,19 @@ Optionally you can unmask everything from this repository by adding following li
 == Useful stuff ==
 
  * [http://git.pioto.org/gitweb/paludis-scripts.git Miscellaneous scripts related to Paludis.]
+
+= Layman =
+
+Since I don't use Layman, it wasn't tested.
+
+Edit your */etc/layman/layman.cfg* and add new overlay list :
+{{{
+overlays  : http://www.gentoo.org/proj/en/overlays/layman-global.txt
+            https://godin-gentoo-repository.googlecode.com/svn/trunk/layman.xml
+}}}
+
+Add to sync list :
+{{{
+layman -L
+layman -a godin
+}}}
