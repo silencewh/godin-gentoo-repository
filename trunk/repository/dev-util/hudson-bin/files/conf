@@ -39,6 +39,7 @@ HUDSON_HANDLER_IDLE="20"
 
 #
 # Pass arbitrary arguments to Hudson.
+# Eg.: --prefix=/hudson
 # Full option list: java -jar hudson.war --help
 #
 HUDSON_ARGS=""
