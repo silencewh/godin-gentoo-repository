@@ -7,4 +7,6 @@
   * [Hudson Install Hudson]
   * [Nexus Install Nexus]
 
+----
+
 <wiki:gadget url="http://sonar-identity.googlecode.com/svn/wiki/adsense2.xml" width="300" height="250" />
