@@ -1,4 +1,5 @@
 #summary How to install Hudson
+#sidebar TableOfContents
 
 [Hudson] is extensible continuous integration server.
 
