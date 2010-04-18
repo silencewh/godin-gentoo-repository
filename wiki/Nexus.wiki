@@ -2,7 +2,7 @@
 #labels Phase-Deploy,Featured
 #sidebar TableOfContents
 
-[http://nexus.sonatype.org/ Nexus] is repository manager.
+[http://nexus.sonatype.org/ Nexus] is Maven Repository Manager
 
 = Prerequisites =
 
