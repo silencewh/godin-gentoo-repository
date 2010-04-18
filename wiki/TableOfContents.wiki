@@ -4,3 +4,4 @@
  * Ebuilds
   * [Sonar Install Sonar]
   * [Hudson Install Hudson]
+  * [Nexus Install Nexus]
