@@ -2,7 +2,7 @@
 #labels Phase-Deploy,Featured
 #sidebar TableOfContents
 
-[Hudson] is extensible continuous integration server.
+[Hudson http://hudson-ci.org/] is extensible continuous integration server.
 
 = Prerequisites =
 
