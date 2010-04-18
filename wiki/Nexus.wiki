@@ -1,0 +1,25 @@
+#summary How to install Nexus
+#labels Phase-Deploy,Featured
+#sidebar TableOfContents
+
+[http://nexus.sonatype.org/ Nexus] is repository manager.
+
+= Prerequisites =
+
+Configured repository (see [HowTo]).
+
+= Installation =
+
+{{{
+paludis -i dev-java/nexus-oss-bin
+}}}
+
+The only thing left to do is to start Nexus:
+{{{
+/etc/init.d/nexus-1.5 start
+}}}
+
+And, optionally, add it to start at boot:
+{{{
+rc-update add nexus-1.5 default
+}}}
