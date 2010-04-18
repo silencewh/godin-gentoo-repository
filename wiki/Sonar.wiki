@@ -1,5 +1,6 @@
 #summary How to install Sonar
 #labels Phase-Deploy
+#sidebar TableOfContents
 
 [http://sonarsource.org Sonar] is an open platform to manage code quality.
 
