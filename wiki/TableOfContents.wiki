@@ -1,0 +1,6 @@
+#summary Table of contents
+
+ * [HowTo Configure repository]
+ * Ebuilds
+  * [Sonar Install Sonar]
+  * [Hudson Install Hudson]
