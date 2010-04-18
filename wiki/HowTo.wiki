@@ -5,6 +5,9 @@
 = Introduction =
 
 For now this Gentoo Repository is just a copy of my local overlay/repository.
+
+= Disclaimer =
+
 You can use it on your own risk without any warranty.
 
 = Paludis =
