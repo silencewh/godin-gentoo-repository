@@ -12,7 +12,7 @@ Configured repository (see [HowTo]).
 paludis -i dev-util/hudson-bin
 }}}
 
-The only thing left to do is to start Sonar:
+The only thing left to do is to start Hudson:
 {{{
 /etc/init.d/hudson start
 }}}
