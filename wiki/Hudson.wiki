@@ -1,0 +1,23 @@
+#summary How to install Hudson
+
+[Hudson] is extensible continuous integration server.
+
+= Prerequisites =
+
+Configured repository (see [HowTo]).
+
+= Installation =
+
+{{{
+paludis -i dev-util/hudson-bin
+}}}
+
+The only thing left to do is to start Sonar:
+{{{
+/etc/init.d/hudson start
+}}}
+
+And, optionally, add it to start at boot:
+{{{
+rc-update add hudson default
+}}}
