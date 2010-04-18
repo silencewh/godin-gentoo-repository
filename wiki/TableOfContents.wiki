@@ -1,5 +1,6 @@
 #summary Table of contents
 
+ * [News]
  * [HowTo Configure repository]
  * Ebuilds
   * [Sonar Install Sonar]
