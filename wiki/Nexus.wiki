@@ -1,5 +1,5 @@
 #summary How to install Nexus
-#labels Phase-Deploy,Featured,Restrict-View-Commit
+#labels Phase-Deploy,Featured
 
 [http://nexus.sonatype.org/ Nexus] is Maven Repository Manager.
 
