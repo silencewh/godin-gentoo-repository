@@ -1,6 +1,5 @@
 #summary How to install Hudson
 #labels Phase-Deploy,Featured
-#sidebar TableOfContents
 
 [http://hudson-ci.org/ Hudson] is extensible continuous integration server.
 
