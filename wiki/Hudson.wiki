@@ -14,7 +14,12 @@ Configured repository (see [HowTo]).
 paludis -i dev-util/hudson-bin
 }}}
 
-The only thing left to do is to start Hudson:
+Now you can configure Hudson:
+{{{
+/etc/conf.d/hudson
+}}}
+
+The only thing left to do is to start:
 {{{
 /etc/init.d/hudson start
 }}}
