@@ -39,7 +39,7 @@ HUDSON_HANDLER_IDLE="20"
 
 #
 # Pass arbitrary arguments to Hudson.
-# Eg.: --prefix=/hudson
+# Eg.: --httpListenAddress=127.0.0.1 --prefix=/hudson
 # Full option list: java -jar hudson.war --help
 #
 HUDSON_ARGS=""
