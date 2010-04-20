@@ -9,8 +9,14 @@ Configured repository (see [HowTo]).
 
 = Installation =
 
+If you use paludis:
 {{{
 paludis -i dev-java/nexus-oss-bin
+}}}
+
+Or using emerge:
+{{{
+emerge -av dev-java/nexus-oss-bin
 }}}
 
 The only thing left to do is to start Nexus:
