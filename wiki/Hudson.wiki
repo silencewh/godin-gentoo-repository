@@ -9,8 +9,14 @@ Configured repository (see [HowTo]).
 
 = Installation =
 
+If you use paludis:
 {{{
 paludis -i dev-util/hudson-bin
+}}}
+
+Or using emerge:
+{{{
+emerge -av dev-util/hudson-bin
 }}}
 
 Now you can configure Hudson:
