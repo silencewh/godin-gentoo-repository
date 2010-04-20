@@ -9,8 +9,14 @@ Configured repository (see [HowTo]).
 
 = Installation =
 
+If you use paludis:
 {{{
 paludis -i dev-util/sonar-bin
+}}}
+
+Or using emerge:
+{{{
+emerge -av dev-util/sonar-bin
 }}}
 
 The only thing left to do is to start Sonar:
