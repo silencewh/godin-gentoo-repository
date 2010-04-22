@@ -2,5 +2,4 @@
 #labels Phase-Requirements
 
  * [http://www.zeroturnaround.com/jrebel JRebel]
- * [http://mvnsh.sonatype.org/ mvnsh]
  * [http://www.ej-technologies.com/products/jprofiler/overview.html jprofiler]
