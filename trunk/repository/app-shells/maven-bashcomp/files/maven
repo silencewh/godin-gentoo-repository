@@ -88,4 +88,4 @@ _m2_complete()
   COMPREPLY=($(compgen -W "${possibles}" ${cur} | sed 's/\\\\//g'))
 }
 
-complete -F _m2_complete -o filenames mvn
+complete -F _m2_complete -o filenames mvn mvn-2.0 mvn-2.1 mvn-2.2 mvn-3.0
