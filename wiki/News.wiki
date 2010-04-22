@@ -1,5 +1,6 @@
 #summary News
 #labels Featured
 
- * *2010-04-18* New ebuilds: dev-util/hudson-bin, dev-util/sonar-bin, dev-java/nexus-oss-bin.
- * *2010-04-11* Initial commit.
+ * *2010-04-22* New ebuild: dev-java/mvnsh-bin
+ * *2010-04-18* New ebuilds: dev-util/hudson-bin, dev-util/sonar-bin, dev-java/nexus-oss-bin
+ * *2010-04-11* Initial commit
