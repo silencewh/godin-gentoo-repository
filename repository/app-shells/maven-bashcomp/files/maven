@@ -78,6 +78,7 @@ _m2_complete()
   goals=$goals _m2_make_goals "license" "check format remove"
   # Sonar
   goals=$goals _m2_make_goals "sonar-dev-mojo" "start"
+  goals=$goals _m2_make_goals "sonar" "sonar"
   # Hudson
   goals=$goals _m2_make_goals "hpi" "run"
   # TekLabs
