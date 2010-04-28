@@ -21,10 +21,10 @@ emerge -av dev-util/sonar-bin
 
 The only thing left to do is to start Sonar:
 {{{
-/etc/init.d/sonar-2.0.1 start
+/etc/init.d/sonar start
 }}}
 
 And, optionally, add it to start at boot:
 {{{
-rc-update add sonar-2.0.1 default
+rc-update add sonar default
 }}}
