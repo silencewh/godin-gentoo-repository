@@ -2,7 +2,7 @@ inherit java-pkg-2
 
 DESCRIPTION="Sonar is an open platform to manage code quality."
 HOMEPAGE="http://sonarsource.org/"
-LICENSE="GPL-3"
+LICENSE="LGPL-3"
 MY_PV="${PV/_rc/RC}"
 MY_P="sonar-${MY_PV}"
 SRC_URI="http://dist.sonar.codehaus.org/${MY_P}.zip"
