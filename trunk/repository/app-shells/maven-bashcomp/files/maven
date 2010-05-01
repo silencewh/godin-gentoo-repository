@@ -21,7 +21,10 @@ _m2_complete()
   prev=${COMP_WORDS[COMP_CWORD-1]}
 
     profiles="test release"
-    defines="skipTests=true"
+    defines="\
+skipTests=true \
+enforcer.skip=true \
+"
     opts="\
 -q --quiet \
 -C --strict-checksums \
@@ -71,6 +74,7 @@ _m2_complete()
 
   goals=""
   goals=$goals _m2_make_goals "help" "describe effective-pom effective-settings system"
+  goals=$goals _m2_make_goals "release" "prepare perform rollback clean"
   goals=$goals _m2_make_goals "dependency" "tree sources analyze resolve"
   goals=$goals _m2_make_goals "jetty" "run-war"
   goals=$goals _m2_make_goals "assembly" "assembly"
