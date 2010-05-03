@@ -73,7 +73,7 @@ enforcer.skip=true \
     esac
 
   goals=""
-  goals=$goals _m2_make_goals "help" "describe effective-pom effective-settings system"
+  goals=$goals _m2_make_goals "help" "active-profiles all-profiles describe effective-pom effective-settings evaluate expressions system"
   goals=$goals _m2_make_goals "release" "prepare perform rollback clean"
   goals=$goals _m2_make_goals "dependency" "tree sources analyze resolve"
   goals=$goals _m2_make_goals "jetty" "run-war"
