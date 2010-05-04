@@ -1,0 +1,2 @@
+# Until RPM will be available
+=dev-util/hudson-bin-1.356
