@@ -9,7 +9,7 @@ RDEPEND=">=virtual/jdk-1.6"
 
 MY_PV="93.94"
 
-RESTRICT="strip"
+RESTRICT="mirror strip"
 QA_TEXTRELS="opt/${P}/bin/libbreakgen.so"
 
 DESCRIPTION="IntelliJ IDEA is an intelligent Java IDE"
