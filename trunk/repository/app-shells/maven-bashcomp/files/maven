@@ -73,16 +73,21 @@ enforcer.skip=true \
     esac
 
   goals=""
+  # http://maven.apache.org/plugins/
+  goals=$goals _m2_make_goals "docck" "check"
   goals=$goals _m2_make_goals "help" "active-profiles all-profiles describe effective-pom effective-settings evaluate expressions system"
   goals=$goals _m2_make_goals "release" "prepare perform rollback clean"
-  goals=$goals _m2_make_goals "dependency" "tree sources analyze resolve"
-  goals=$goals _m2_make_goals "jetty" "run-war"
+  goals=$goals _m2_make_goals "dependency" "resolve sources analyze tree"
   goals=$goals _m2_make_goals "assembly" "assembly"
+  goals=$goals _m2_make_goals "javadoc" "aggregate aggregate-jar fix jar javadoc test-aggregate test-aggregate-jar test-fix test-jar test-javadoc"
+  # http://mojo.codehaus.org/plugins.html
   goals=$goals _m2_make_goals "versions" "display-dependency-updates display-plugin-updates display-property-updates"
+  goals=$goals _m2_make_goals "jetty" "run-war"
+  goals=$goals _m2_make_goals "sonar" "sonar"
+  # License
   goals=$goals _m2_make_goals "license" "check format remove"
   # Sonar
   goals=$goals _m2_make_goals "sonar-dev-mojo" "start"
-  goals=$goals _m2_make_goals "sonar" "sonar"
   # Hudson
   goals=$goals _m2_make_goals "hpi" "run"
   # TekLabs
