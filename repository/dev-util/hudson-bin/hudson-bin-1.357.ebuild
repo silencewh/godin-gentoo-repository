@@ -1,10 +1,11 @@
 inherit java-pkg-2 rpm
 
 DESCRIPTION="Extensible continuous integration server"
-# We are using rpm package here, because we want file with version.
-SRC_URI="http://hudson-labs.org/redhat/RPMS/noarch/hudson-${PV}-1.1.noarch.rpm"
 HOMEPAGE="http://hudson-ci.org/"
 LICENSE="MIT"
+# We are using rpm package here, because we want file with version.
+SRC_URI="http://hudson-labs.org/redhat/RPMS/noarch/hudson-${PV}-1.1.noarch.rpm"
+RESTRICT="mirror"
 SLOT="0"
 KEYWORDS="~x86"
 IUSE=""
