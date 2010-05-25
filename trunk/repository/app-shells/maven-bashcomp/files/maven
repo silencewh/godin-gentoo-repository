@@ -24,6 +24,7 @@ _m2_complete()
     defines="\
 skipTests=true \
 enforcer.skip=true \
+tycho.mode=maven \
 "
     opts="\
 -q --quiet \
@@ -81,7 +82,7 @@ enforcer.skip=true \
   goals=$goals _m2_make_goals "assembly" "assembly"
   goals=$goals _m2_make_goals "javadoc" "aggregate aggregate-jar fix jar javadoc test-aggregate test-aggregate-jar test-fix test-jar test-javadoc"
   # http://mojo.codehaus.org/plugins.html
-  goals=$goals _m2_make_goals "versions" "display-dependency-updates display-plugin-updates display-property-updates"
+  goals=$goals _m2_make_goals "versions" "display-dependency-updates display-plugin-updates display-property-updates update-parent"
   goals=$goals _m2_make_goals "jetty" "run-war"
   goals=$goals _m2_make_goals "sonar" "sonar"
   # License
