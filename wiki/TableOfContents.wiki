@@ -8,7 +8,7 @@
   * [Nexus Install Nexus]
   * [Missing List of missing packages]
  * Configurations
-  * [SSH_agent SSH agent in KDE]
+  * [SSH_agent SSH-agent in KDE]
 
 ----
 
