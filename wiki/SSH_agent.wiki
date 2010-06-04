@@ -1,4 +1,4 @@
-#summary My configuration for SSH-agent
+#summary My configuration for SSH-agent in KDE
 #labels Phase-Deploy
 
 = Details =
