@@ -85,6 +85,7 @@ tycho.mode=maven \
   goals=$goals _m2_make_goals "versions" "display-dependency-updates display-plugin-updates display-property-updates update-parent"
   goals=$goals _m2_make_goals "jetty" "run-war"
   goals=$goals _m2_make_goals "sonar" "sonar"
+  goals=$goals _m2_make_goals "tomcat" "run"
   # License
   goals=$goals _m2_make_goals "license" "check format remove"
   # Sonar
