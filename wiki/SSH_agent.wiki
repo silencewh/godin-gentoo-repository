@@ -1,0 +1,12 @@
+#summary My configuration for SSH-agent
+#labels Phase-Deploy
+
+= Details =
+
+ # Install kde-misc/ksshaskpass
+ # Uncomment lines related to ssh-agent in /etc/kde/shutdown/agent-shutdown.sh
+ # Add following lines to ~/.bashrc :
+{{{
+export SSH_ASKPASS="/usr/bin/ksshaskpass"
+alias ssh='[[ (`ssh-add -l | grep -c "no identities"` == 1) && `ssh-add -t 1 < /dev/null` ]]; /usr/bin/ssh'
+}}}
