@@ -8,5 +8,5 @@
  # Add following lines to ~/.bashrc :
 {{{
 export SSH_ASKPASS="/usr/bin/ksshaskpass"
-alias ssh='[[ (`ssh-add -l | grep -c "no identities"` == 1) && `ssh-add -t 1 < /dev/null` ]]; /usr/bin/ssh'
+alias ssh='[[ (`ssh-add -l | grep -c "no identities"` == 1) && `ssh-add -t 120 < /dev/null` ]]; /usr/bin/ssh'
 }}}
