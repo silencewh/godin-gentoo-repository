@@ -4,7 +4,7 @@
 = Details =
 
  # Install kde-misc/ksshaskpass
- # Uncomment lines related to ssh-agent in /etc/kde/shutdown/agent-shutdown.sh
+ # Uncomment lines related to ssh-agent in /etc/kde/startup/agent-startup.sh and /etc/kde/shutdown/agent-shutdown.sh
  # Add following lines to ~/.bashrc :
 {{{
 export SSH_ASKPASS="/usr/bin/ksshaskpass"
