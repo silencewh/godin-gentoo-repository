@@ -3,4 +3,3 @@
 
  * [http://www.zeroturnaround.com/jrebel JRebel]
  * [http://www.ej-technologies.com/products/jprofiler/overview.html jprofiler]
- * [http://jlint.sourceforge.net/ jlint]
