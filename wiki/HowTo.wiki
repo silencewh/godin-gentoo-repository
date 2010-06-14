@@ -18,7 +18,6 @@ You can read more about Paludis from [http://paludis.pioto.org/ official site].
 
 Create file */etc/paludis/repositories/godin.conf* :
 {{{
-master_repository = gentoo
 importance = 20
 location = ${ROOT}/var/paludis/repositories/godin
 sync = svn+http://godin-gentoo-repository.googlecode.com/svn/trunk/repository/
