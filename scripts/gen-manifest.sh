@@ -13,6 +13,6 @@ DIR="$(dirname "$0")"
 
 appareo --manifest \
     --extra-repository-dir /var/paludis/repositories/gentoo/ \
-    --download-dir /usr/portage/distfiles/ \
+    --download-dir /usr/distfiles/ \
     --repository-dir $DIR/../repository \
     -P ${1}
