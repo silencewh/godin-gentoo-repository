@@ -1,5 +1,8 @@
 # Unstable.
->dev-util/idea-9.0.2
+=dev-util/idea-9.0.3*
 
 # Unstable.
->=dev-java/sun-jdk-1.7
+=dev-java/sun-jdk-1.7*
+
+# Unstable.
+=dev-util/sonar-bin-2.2*
