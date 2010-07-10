@@ -10,7 +10,9 @@ SLOT="0"
 KEYWORDS="~x86"
 IUSE=""
 
-RDEPEND=">=virtual/jdk-1.5"
+DEPEND="media-fonts/dejavu"
+RDEPEND="${DEPEND}
+        >=virtual/jdk-1.5"
 
 src_unpack() {
     rpm_src_unpack ${A}
