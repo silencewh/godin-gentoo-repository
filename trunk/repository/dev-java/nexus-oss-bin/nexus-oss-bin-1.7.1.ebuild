@@ -4,8 +4,9 @@ DESCRIPTION="Maven Repository Manager"
 HOMEPAGE="http://nexus.sonatype.org/"
 LICENSE="GPL-3"
 SRC_URI="http://nexus.sonatype.org/downloads/nexus-oss-webapp-${PV}-bundle.zip"
+RESTRICT="mirror"
 KEYWORDS="~x86"
-SLOT="1.7"
+SLOT="0"
 IUSE=""
 
 S="${WORKDIR}"
@@ -34,7 +35,7 @@ src_install() {
     insinto ${INSTALL_DIR}
     doins -r nexus-oss-webapp-${PV}
 
-    newinitd "${FILESDIR}/init-${SLOT}.sh" nexus-${SLOT}
+    newinitd "${FILESDIR}/init.sh" nexus
 
     fowners -R nexus:nexus ${INSTALL_DIR}
     fperms 755 "${INSTALL_DIR}/nexus-oss-webapp-${PV}/bin/jsw/linux-x86-32/nexus"
