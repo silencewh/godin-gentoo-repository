@@ -4,5 +4,5 @@
 # Unstable.
 =dev-java/sun-jdk-1.7*
 
-# Unstable.
-=dev-util/sonar-bin-2.2*
+# Waiting Maven central repository synchronization.
+=dev-util/sonar-bin-2.2
