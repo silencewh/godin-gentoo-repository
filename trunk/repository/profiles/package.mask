@@ -1,5 +1,2 @@
 # Unstable.
-=dev-util/idea-9.0.3*
-
-# Unstable.
 =dev-java/sun-jdk-1.7*
