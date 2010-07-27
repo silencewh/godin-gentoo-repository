@@ -47,9 +47,9 @@ diff -ruN ../mwm/scripts/udev/z60_madwimax.rules.in ./scripts/udev/z60_madwimax.
 -ATTR{idVendor}=="04e9", ATTR{idProduct}=="6761", RUN+="@SBINDIR@/madwimax -qd --exact-device=$attr{busnum}/$attr{devnum}"
 -ATTR{idVendor}=="04e8", ATTR{idProduct}=="6731", RUN+="@SBINDIR@/madwimax -qd --exact-device=$attr{busnum}/$attr{devnum}"
 -ATTR{idVendor}=="04e8", ATTR{idProduct}=="6780", RUN+="@SBINDIR@/madwimax -qd --exact-device=$attr{busnum}/$attr{devnum}"
-+ENV{ID_VENDOR_ID}=="04e8", ENV{ID_MODEL_ID}=="6761", RUN+="/usr/sbin/madwimax -dfo --log-file=/var/log/madwimax --exact-device=$env{BUSNUM}/$env{DEVNUM}"
-+ENV{ID_VENDOR_ID}=="04e9", ENV{ID_MODEL_ID}=="6761", RUN+="/usr/sbin/madwimax -dfo --log-file=/var/log/madwimax --exact-device=$env{BUSNUM}/$env{DEVNUM}"
-+ENV{ID_VENDOR_ID}=="04e8", ENV{ID_MODEL_ID}=="6731", RUN+="/usr/sbin/madwimax -do --log-file=/var/log/madwimax --exact-device=$env{BUSNUM}/$env{DEVNUM}"
-+ENV{ID_VENDOR_ID}=="04e8", ENV{ID_MODEL_ID}=="6780", RUN+="/usr/sbin/madwimax -dfo --log-file=/var/log/madwimax --exact-device=$env{BUSNUM}/$env{DEVNUM}"
++ENV{ID_VENDOR_ID}=="04e8", ENV{ID_MODEL_ID}=="6761", RUN+="/usr/sbin/madwimax -dfo --log-file=/var/log/madwimax.log --exact-device=$env{BUSNUM}/$env{DEVNUM}"
++ENV{ID_VENDOR_ID}=="04e9", ENV{ID_MODEL_ID}=="6761", RUN+="/usr/sbin/madwimax -dfo --log-file=/var/log/madwimax.log --exact-device=$env{BUSNUM}/$env{DEVNUM}"
++ENV{ID_VENDOR_ID}=="04e8", ENV{ID_MODEL_ID}=="6731", RUN+="/usr/sbin/madwimax -do --log-file=/var/log/madwimax.log --exact-device=$env{BUSNUM}/$env{DEVNUM}"
++ENV{ID_VENDOR_ID}=="04e8", ENV{ID_MODEL_ID}=="6780", RUN+="/usr/sbin/madwimax -dfo --log-file=/var/log/madwimax.log --exact-device=$env{BUSNUM}/$env{DEVNUM}"
  
  LABEL="madwimax_rules_end"
