@@ -4,6 +4,3 @@
 # Unstable.
 =dev-util/idea-9.0.4*
 =dev-util/idea-10.0.0*
-
-# Waiting for release.
-=dev-java/maven-bin-3.0_beta2
