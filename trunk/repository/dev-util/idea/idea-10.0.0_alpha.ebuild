@@ -7,7 +7,7 @@ inherit eutils versionator
 SLOT="$(get_major_version)"
 RDEPEND=">=virtual/jdk-1.6"
 
-MY_PV="96.802"
+MY_PV="96.1121"
 
 RESTRICT="mirror strip"
 QA_TEXTRELS="opt/${P}/bin/libbreakgen.so"
