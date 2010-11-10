@@ -7,14 +7,14 @@ inherit eutils versionator
 SLOT="$(get_major_version)"
 RDEPEND=">=virtual/jdk-1.6"
 
-MY_PV="95.607"
+MY_PV="95.627"
 
 RESTRICT="mirror strip"
 QA_TEXTRELS="opt/${P}/bin/libbreakgen.so"
 
 DESCRIPTION="IntelliJ IDEA is an intelligent Java IDE"
 HOMEPAGE="http://jetbrains.com/idea/"
-SRC_URI="http://download.jetbrains.com/${PN}/${PN}IU-${MY_PV}.tar.gz"
+SRC_URI="http://download.jetbrains.com/${PN}/${PN}IU-${PV}.tar.gz"
 LICENSE="IntelliJ-IDEA"
 IUSE=""
 KEYWORDS="x86"
