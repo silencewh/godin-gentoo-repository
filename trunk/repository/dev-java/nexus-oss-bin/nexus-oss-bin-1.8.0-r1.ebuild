@@ -15,7 +15,7 @@ RDEPEND=">=virtual/jdk-1.5"
 
 INSTALL_DIR="/opt/nexus"
 
-WEBAPP_DIR="${INSTALL_DIR}/nexus-oss-webapp-${PV}"
+WEBAPP_DIR="${INSTALL_DIR}/nexus-oss-webapp"
 
 pkg_setup() {
     #enewgroup <name> [gid]
@@ -32,12 +32,12 @@ src_unpack() {
 }
 
 src_install() {
-    insinto ${INSTALL_DIR}
-    doins -r nexus-oss-webapp-${PV}
+    insinto ${WEBAPP_DIR}
+    doins -r nexus-oss-webapp-${PV}/*
 
     newinitd "${FILESDIR}/init.sh" nexus
 
     fowners -R nexus:nexus ${INSTALL_DIR}
-    fperms 755 "${INSTALL_DIR}/nexus-oss-webapp-${PV}/bin/jsw/linux-x86-32/nexus"
-    fperms 755 "${INSTALL_DIR}/nexus-oss-webapp-${PV}/bin/jsw/linux-x86-32/wrapper"
+    fperms 755 "${INSTALL_DIR}/nexus-oss-webapp/bin/jsw/linux-x86-32/nexus"
+    fperms 755 "${INSTALL_DIR}/nexus-oss-webapp/bin/jsw/linux-x86-32/wrapper"
 }
