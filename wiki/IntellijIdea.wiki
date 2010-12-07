@@ -1,0 +1,20 @@
+#summary How to install IntelliJ IDEA
+#labels Featured
+
+[http://sonarsource.org Sonar] is an open platform to manage code quality.
+
+= Prerequisites =
+
+Configured repository (see [HowTo]).
+
+= Installation =
+
+If you use paludis:
+{{{
+paludis -i dev-util/idea
+}}}
+
+Or using emerge:
+{{{
+emerge -av dev-util/idea
+}}}
