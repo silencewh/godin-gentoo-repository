@@ -1,8 +1,6 @@
 #summary How to install IntelliJ IDEA
 #labels Featured
 
-[http://sonarsource.org Sonar] is an open platform to manage code quality.
-
 = Prerequisites =
 
 Configured repository (see [HowTo]).
