@@ -44,4 +44,8 @@ src_install() {
     fowners -R sonar:sonar ${INSTALL_DIR}
     fperms 755 "${INSTALL_DIR}/bin/linux-x86-32/sonar.sh"
     fperms 755 "${INSTALL_DIR}/bin/linux-x86-32/wrapper"
+
+    # Protect Sonar conf on upgrade
+    echo "CONFIG_PROTECT=\"${INSTALL_DIR}/conf\"" > "${T}/25sonar" || die
+    doenvd "${T}/25sonar"
 }
