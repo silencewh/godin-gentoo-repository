@@ -1,7 +1,7 @@
-#summary How to install Hudson
+#summary How to install Jenkins
 #labels Phase-Deploy,Featured
 
-[http://hudson-ci.org/ Hudson] is extensible continuous integration server.
+[http://jenkins-ci.org/ Jenkins] is extensible continuous integration server.
 
 = Prerequisites =
 
@@ -11,25 +11,25 @@ Configured repository (see [HowTo]).
 
 If you use paludis:
 {{{
-paludis -i dev-util/hudson-bin
+paludis -i dev-util/jenkins-bin
 }}}
 
 Or using emerge:
 {{{
-emerge -av dev-util/hudson-bin
+emerge -av dev-util/jenkins-bin
 }}}
 
 Now you can configure Hudson:
 {{{
-/etc/conf.d/hudson
+/etc/conf.d/jenkins
 }}}
 
 The only thing left to do is to start:
 {{{
-/etc/init.d/hudson start
+/etc/init.d/jenkins start
 }}}
 
 And, optionally, add it to start at boot:
 {{{
-rc-update add hudson default
+rc-update add jenkins default
 }}}
