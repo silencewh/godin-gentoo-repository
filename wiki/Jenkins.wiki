@@ -1,0 +1,35 @@
+#summary How to install Jenkins
+#labels Phase-Deploy,Featured
+
+[http://jenkins-ci.org/ Jenkins] is extensible continuous integration server.
+
+= Prerequisites =
+
+Configured repository (see [HowTo]).
+
+= Installation =
+
+If you use paludis:
+{{{
+paludis -i dev-util/jenkins-bin
+}}}
+
+Or using emerge:
+{{{
+emerge -av dev-util/jenkins-bin
+}}}
+
+Now you can configure Hudson:
+{{{
+/etc/conf.d/jenkins
+}}}
+
+The only thing left to do is to start:
+{{{
+/etc/init.d/jenkins start
+}}}
+
+And, optionally, add it to start at boot:
+{{{
+rc-update add jenkins default
+}}}
