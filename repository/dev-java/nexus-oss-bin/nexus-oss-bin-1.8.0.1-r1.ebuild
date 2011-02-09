@@ -5,7 +5,7 @@ HOMEPAGE="http://nexus.sonatype.org/"
 LICENSE="GPL-3"
 SRC_URI="http://nexus.sonatype.org/downloads/nexus-oss-webapp-${PV}-bundle.zip"
 RESTRICT="mirror"
-KEYWORDS="~x86"
+KEYWORDS="~x86 ~amd64"
 SLOT="0"
 IUSE=""
 
