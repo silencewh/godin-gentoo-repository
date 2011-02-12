@@ -22,7 +22,7 @@ pkg_setup() {
     #enewgroup <name> [gid]
     enewgroup sonar
     #enewuser <user> [uid] [shell] [homedir] [groups] [params]
-    enewuser sonar -1 /bin/bash /opt/sonar "sonar,postgres"
+    enewuser sonar -1 /bin/bash /opt/sonar "sonar"
 }
 
 src_unpack() {
