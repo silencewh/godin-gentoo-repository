@@ -9,9 +9,9 @@ Configured repository (see [HowTo]).
 
 = Installation =
 
-If you use paludis:
+If you use cave:
 {{{
-paludis -i dev-java/nexus-oss-bin
+cave resolve -x dev-java/nexus-oss-bin
 }}}
 
 Or using emerge:
@@ -21,10 +21,10 @@ emerge -av dev-java/nexus-oss-bin
 
 The only thing left to do is to start Nexus:
 {{{
-/etc/init.d/nexus-1.5 start
+/etc/init.d/nexus start
 }}}
 
 And, optionally, add it to start at boot:
 {{{
-rc-update add nexus-1.5 default
+rc-update add nexus default
 }}}
