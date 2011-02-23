@@ -1,7 +1,7 @@
 #summary How to install Sonar
 #labels Phase-Deploy,Featured
 
-[http://sonarsource.org Sonar] is an open platform to manage code quality.
+[http://sonarsource.org Sonar] is an ultimate open platform to manage code quality.
 
 = Prerequisites =
 
@@ -9,9 +9,9 @@ Configured repository (see [HowTo]).
 
 = Installation =
 
-If you use paludis:
+If you use cave:
 {{{
-paludis -i dev-util/sonar-bin
+cave resolve -x dev-util/sonar-bin
 }}}
 
 Or using emerge:
