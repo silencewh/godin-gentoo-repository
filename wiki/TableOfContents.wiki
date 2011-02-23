@@ -4,8 +4,8 @@
  * [HowTo Configure repository]
  * Ebuilds
   * [Sonar Install Sonar]
-  * [Hudson Install Hudson]
   * [Jenkins Install Jenkins]
+  * [Nexus Install Nexus]
   * [Missing List of missing packages]
  * Configurations
   * [SSH_agent SSH-agent in KDE]
