@@ -5,7 +5,7 @@
  * Ebuilds
   * [Sonar Install Sonar]
   * [Hudson Install Hudson]
-  * [Nexus Install Nexus]
+  * [Jenkins Install Jenkins]
   * [Missing List of missing packages]
  * Configurations
   * [SSH_agent SSH-agent in KDE]
