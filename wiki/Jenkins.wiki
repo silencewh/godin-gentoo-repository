@@ -19,7 +19,7 @@ Or using emerge:
 emerge -av dev-util/jenkins-bin
 }}}
 
-Now you can configure Hudson:
+Now you can configure Jenkins:
 {{{
 /etc/conf.d/jenkins
 }}}
