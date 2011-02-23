@@ -19,11 +19,6 @@ Or using emerge:
 emerge -av dev-util/jenkins-bin
 }}}
 
-Or using paludis:
-{{{
-paludis -i dev-util/jenkins-bin
-}}}
-
 Now you can configure Hudson:
 {{{
 /etc/conf.d/jenkins
