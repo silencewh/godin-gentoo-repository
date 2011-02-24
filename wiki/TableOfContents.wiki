@@ -5,6 +5,7 @@
  * Ebuilds
   * [Sonar Install Sonar]
   * [Jenkins Install Jenkins]
+  * [Hudson Install Hudson]
   * [Nexus Install Nexus]
   * [Missing List of missing packages]
  * Configurations
