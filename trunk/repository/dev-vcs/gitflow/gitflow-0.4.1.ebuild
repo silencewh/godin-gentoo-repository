@@ -14,10 +14,11 @@ SRC_URI="https://github.com/${GITHUB_USER}/${PN}/tarball/${GITHUB_TAG} -> ${P}.t
 LICENSE="AS-IS"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
+IUSE="+completion"
 
-DEPEND=""
-RDEPEND=">=dev-libs/shflags-1.0.3"
+DEPEND="completion? ( dev-vcs/git-flow-completion )"
+RDEPEND="${DEPEND}
+	>=dev-libs/shflags-1.0.3"
 
 src_prepare() {
 	cd "${WORKDIR}"/${GITHUB_USER}-${PN}-*
