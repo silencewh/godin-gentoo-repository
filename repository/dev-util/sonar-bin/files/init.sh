@@ -7,6 +7,12 @@ depend() {
 
 RUN_AS=sonar
 
+if $(uname -m | grep 'x86_64'); then
+  JSW=/opt/sonar/bin/linux-x86-64/sonar.sh
+else
+  JSW=/opt/sonar/bin/linux-x86-32/sonar.sh
+fi
+
 checkconfig() {
     return 0
 }
@@ -15,12 +21,12 @@ start() {
     checkconfig || return 1
 
     ebegin "Starting ${SVCNAME}"
-    su $RUN_AS -c "/opt/sonar/bin/linux-x86-32/sonar.sh start"
+    su $RUN_AS -c "$JSW start"
     eend $?
 }
 
 stop() {
     ebegin "Stopping ${SVCNAME}"
-    su $RUN_AS -c "/opt/sonar/bin/linux-x86-32/sonar.sh stop"
+    su $RUN_AS -c "$JSW stop"
     eend $?
 }
