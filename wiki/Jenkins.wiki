@@ -10,8 +10,8 @@ Configured repository (see [HowTo]).
 = Installation =
 
 Following keywords used to indicate stability of package :
- * x86, amd64 - corresponds to [https://wiki.jenkins-ci.org/display/JENKINS/LTS+Release+Line long-term support release]
- * ~x86, ~amd64 - corresponds to release
+ * x86, amd64 - corresponds to [https://wiki.jenkins-ci.org/display/JENKINS/LTS+Release+Line long-term support release] ([http://jenkins-ci.org/changelog-stable changelog])
+ * ~x86, ~amd64 - corresponds to release ([http://jenkins-ci.org/changelog changelog])
 
 If you use cave:
 {{{
