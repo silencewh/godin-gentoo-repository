@@ -9,6 +9,10 @@ Configured repository (see [HowTo]).
 
 = Installation =
 
+Following keywords used to indicate stability of package :
+ * x86, amd64 - corresponds to [https://wiki.jenkins-ci.org/display/JENKINS/LTS+Release+Line LTS]
+ * ~x86, ~amd64 - corresponds to release
+
 If you use cave:
 {{{
 cave resolve -x dev-util/jenkins-bin
