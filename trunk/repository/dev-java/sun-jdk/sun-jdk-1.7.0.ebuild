@@ -125,7 +125,15 @@ src_install() {
 			plugin_dir="ns7"
 		fi
 
-		install_mozilla_plugin /opt/${P}/jre/lib/${ARCH}/libnpjp2.so
+		# Godin: start of patch
+		if use x86 ; then
+			install_mozilla_plugin /opt/${P}/jre/lib/i386/libnpjp2.so
+			install_mozilla_plugin /opt/${P}/jre/plugin/i386/$plugin_dir/libjavaplugin_oji.so old_oji
+		else
+			install_mozilla_plugin /opt/${P}/jre/lib/amd64/libnpjp2.so
+		fi
+		#install_mozilla_plugin /opt/${P}/jre/lib/${ARCH}/libnpjp2.so
+		# Godin: end of patch
 	fi
 
 	# create dir for system preferences
