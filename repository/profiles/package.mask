@@ -1,2 +1,5 @@
 # http://jenkins.361315.n4.nabble.com/Launching-slave-agent-not-working-since-upgrading-from-1-421-to-1-423-td3696291.html
 =dev-util/jenkins-bin-1.423
+
+# Release candidate
+=dev-util/sonar-bin-2.11_rc1
