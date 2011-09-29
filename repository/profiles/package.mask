@@ -4,6 +4,7 @@
 # Release candidate
 =dev-util/sonar-bin-2.11_rc1
 =dev-util/sonar-bin-2.11_rc2
+=dev-util/sonar-bin-2.11_rc3
 
 # Serious regressions
 # http://wiki.gradle.org/display/GRADLE/2011/08/18/Gradle+1.0-milestone-4+withdrawn
