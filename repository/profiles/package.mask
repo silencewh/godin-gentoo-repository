@@ -1,10 +1,8 @@
 # http://jenkins.361315.n4.nabble.com/Launching-slave-agent-not-working-since-upgrading-from-1-421-to-1-423-td3696291.html
 =dev-util/jenkins-bin-1.423
 
-# Release candidate
-=dev-util/sonar-bin-2.11_rc1
-=dev-util/sonar-bin-2.11_rc2
-=dev-util/sonar-bin-2.11_rc3
+# Waiting official announcement
+=dev-util/sonar-bin-2.11
 
 # Serious regressions
 # http://wiki.gradle.org/display/GRADLE/2011/08/18/Gradle+1.0-milestone-4+withdrawn
