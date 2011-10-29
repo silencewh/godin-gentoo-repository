@@ -10,7 +10,3 @@
   * [Missing List of missing packages]
  * Configurations
   * [SSH_agent SSH-agent in KDE]
-
-----
-
-<wiki:gadget url="http://sonar-identity.googlecode.com/svn/wiki/adsense2.xml" width="300" height="250" />
