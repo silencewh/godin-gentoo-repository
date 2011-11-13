@@ -33,6 +33,12 @@ src_unpack() {
 
     # Fix permissions
     chmod -R a-x,a+X conf data extensions extras lib war COPYING
+
+    # Fix EOL in configuration files
+    for i in conf/* ; do
+        awk '{ sub("\r$", ""); print }' $i > $i.new
+        mv $i.new $i
+    done
 }
 
 src_install() {
