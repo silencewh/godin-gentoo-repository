@@ -7,8 +7,8 @@ depend() {
 
 RUN_AS=sonar
 
-MACHINE_TYPE=`uname -m`
-if [ ${MACHINE_TYPE} == 'x86_64' ]; then
+MACHINE_TYPE=`getconf LONG_BIT`
+if [ "${MACHINE_TYPE}" = "64" ]; then
   JSW=/opt/sonar/bin/linux-x86-64/sonar.sh
 else
   JSW=/opt/sonar/bin/linux-x86-32/sonar.sh
