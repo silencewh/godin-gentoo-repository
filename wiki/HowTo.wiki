@@ -53,6 +53,7 @@ overlays  : http://www.gentoo.org/proj/en/overlays/layman-global.txt
 
 Add to sync list :
 {{{
+layman -S
 layman -L
 layman -a godin
 }}}
