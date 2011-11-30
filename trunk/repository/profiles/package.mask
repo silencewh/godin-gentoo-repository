@@ -6,4 +6,4 @@
 =dev-java/gradle-bin-1.0_pre4
 
 # Release candidate
->dev-util/sonar-bin-2.11
+>dev-util/sonar-bin-2.12
