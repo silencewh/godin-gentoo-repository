@@ -45,7 +45,10 @@ Optionally you can unmask everything from this repository by adding following li
 
 Since I don't use Layman, it wasn't tested.
 
-Edit your */etc/layman/layman.cfg* and add new overlay list :
+{{{
+layman -f -o http://godin-gentoo-repository.googlecode.com/svn/trunk/layman.xml -a godin
+}}}
+or edit your */etc/layman/layman.cfg* and add new overlay list :
 {{{
 overlays  : http://www.gentoo.org/proj/en/overlays/layman-global.txt
             http://godin-gentoo-repository.googlecode.com/svn/trunk/layman.xml
