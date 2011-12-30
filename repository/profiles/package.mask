@@ -1,6 +1,9 @@
 # http://jenkins.361315.n4.nabble.com/Launching-slave-agent-not-working-since-upgrading-from-1-421-to-1-423-td3696291.html
 =dev-util/jenkins-bin-1.423
 
+# https://twitter.com/#!/aheritier/status/152706689609646080
+=dev-util/jenkins-bin-1.445
+
 # Serious regressions
 # http://wiki.gradle.org/display/GRADLE/2011/08/18/Gradle+1.0-milestone-4+withdrawn
 =dev-java/gradle-bin-1.0_pre4
