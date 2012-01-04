@@ -3,6 +3,7 @@
 
 # https://twitter.com/#!/aheritier/status/152706689609646080
 =dev-util/jenkins-bin-1.445
+=dev-util/jenkins-bin-1.446
 
 # Serious regressions
 # http://wiki.gradle.org/display/GRADLE/2011/08/18/Gradle+1.0-milestone-4+withdrawn
