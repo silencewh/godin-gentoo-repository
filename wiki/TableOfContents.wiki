@@ -7,6 +7,7 @@
   * [Jenkins Install Jenkins]
   * [Hudson Install Hudson]
   * [Nexus Install Nexus]
+  * [MavenBashCompletion Install Maven Bash Completion]
   * [Missing List of missing packages]
  * Configurations
   * [SSH_agent SSH-agent in KDE]
