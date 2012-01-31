@@ -9,5 +9,8 @@
 # http://wiki.gradle.org/display/GRADLE/2011/08/18/Gradle+1.0-milestone-4+withdrawn
 =dev-java/gradle-bin-1.0_pre4
 
+# http://jira.codehaus.org/browse/SONAR-3221
+=dev-util/sonar-bin-2.13
+
 # Release candidate
->dev-util/sonar-bin-2.13
+>=dev-util/sonar-bin-2.14
