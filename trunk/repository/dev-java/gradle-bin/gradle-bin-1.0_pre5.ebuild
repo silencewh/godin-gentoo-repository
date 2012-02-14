@@ -8,7 +8,7 @@ MY_P="${MY_PN}-${MY_PV}"
 
 DESCRIPTION="Build Tool"
 
-SRC_URI="http://repo.gradle.org/gradle/distributions/${MY_P}-all.zip"
+SRC_URI="http://services.gradle.org/distributions/${MY_P}-all.zip"
 HOMEPAGE="http://www.gradle.org/"
 LICENSE="Apache-2.0"
 SLOT="0"
