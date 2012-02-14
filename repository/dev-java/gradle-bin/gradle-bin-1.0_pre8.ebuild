@@ -7,7 +7,8 @@ MY_PV=${MY_PV/_rc/-rc-}
 MY_P="${MY_PN}-${MY_PV}"
 
 DESCRIPTION="Build Tool"
-SRC_URI="http://repo.gradle.org/gradle/distributions/${MY_P}-all.zip"
+
+SRC_URI="http://services.gradle.org/distributions/${MY_P}-all.zip"
 HOMEPAGE="http://www.gradle.org/"
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -30,9 +31,14 @@ src_install() {
     for jar in *.jar; do 
         java-pkg_newjar ${jar} ${jar}
     done
-    insinto "${gradle_home}/lib/core-impl"
-    doins core-impl/*
+    #insinto "${gradle_home}/lib/core-impl"
+    #doins core-impl/*
     insinto "${gradle_home}/lib/plugins"
     doins plugins/*
-    java-pkg_dolauncher "gradle" --main org.gradle.launcher.GradleMain --java_args "-Dgradle.home=${gradle_home} \${GRADLE_OPTS}"
+
+    cd ..
+    cp -Rp bin "${D}/${gradle_home}" || die "failed to copy"
+
+    dodir /usr/bin
+    dosym "${gradle_home}/bin/gradle" /usr/bin/gradle
 }
