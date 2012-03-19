@@ -9,4 +9,4 @@
 =dev-util/sonar-bin-2.13
 
 # Release candidate
->=dev-util/sonar-bin-2.14
+>=dev-util/sonar-bin-2.15
