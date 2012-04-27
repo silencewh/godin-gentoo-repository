@@ -1,7 +1,5 @@
 #!/sbin/runscript
 
-extra_commands="backup"
-
 depend() {
     need net
     use dns logger mysql postgresql
@@ -19,14 +17,6 @@ checkconfig() {
     fi
     if [ ! -d "$JENKINS_HOME" ] ; then
         eerror "JENKINS_HOME directory does not exist: $JENKINS_HOME"
-        return 1
-    fi
-    if [ ! -n "$JENKINS_BACKUP" ] ; then
-        eerror "JENKINS_BACKUP not configured"
-        return 1
-    fi
-    if [ ! -d "$JENKINS_BACKUP" ] ; then
-        eerror "JENKINS_BACKUP directory does not exist: $JENKINS_BACKUP"
         return 1
     fi
     return 0
@@ -56,7 +46,7 @@ start() {
     ebegin "Starting ${SVCNAME}"
     start-stop-daemon --start --quiet --background \
         --make-pidfile --pidfile $JENKINS_PIDFILE \
-        --chuid $RUN_AS \
+        --user $RUN_AS \
         --exec "${COMMAND}" -- $JAVA_PARAMS $PARAMS
     eend $?
 }
@@ -65,11 +55,4 @@ stop() {
     ebegin "Stopping ${SVCNAME}"
     start-stop-daemon --stop --quiet --pidfile $JENKINS_PIDFILE
     eend $?
-}
-
-backup() {
-    checkconfig || return 1
-
-    DATE=`date +%Y%m%d-%H%M`
-    tar -czvf $JENKINS_BACKUP/JENKINS-backup-$DATE.tar.gz -C $JENKINS_HOME .
 }
