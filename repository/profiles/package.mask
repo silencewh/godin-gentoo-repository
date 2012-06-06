@@ -9,3 +9,6 @@
 
 # https://twitter.com/#!/aheritier/status/200337530221117440
 =dev-util/jenkins-bin-1.463
+
+# https://twitter.com/aheritier/status/210253589556367360
+=dev-util/jenkins-bin-1.467
