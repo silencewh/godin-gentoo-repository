@@ -12,3 +12,5 @@
 
 # https://twitter.com/aheritier/status/210253589556367360
 =dev-util/jenkins-bin-1.467
+=dev-util/jenkins-bin-1.468
+=dev-util/jenkins-bin-1.469
