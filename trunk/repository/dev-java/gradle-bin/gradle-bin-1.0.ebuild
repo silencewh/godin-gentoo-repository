@@ -25,14 +25,12 @@ src_install() {
     local gradle_home="${ROOT}/usr/share/${PN}"
     insinto "${gradle_home}"
     use source && java-pkg_dosrc src/*
-    use && java-pkg_dojavadoc docs
+    use docs && java-pkg_dojavadoc docs
     use examples && java-pkg_doexamples samples
     cd lib
     for jar in *.jar; do 
         java-pkg_newjar ${jar} ${jar}
     done
-    #insinto "${gradle_home}/lib/core-impl"
-    #doins core-impl/*
     insinto "${gradle_home}/lib/plugins"
     doins plugins/*
 
