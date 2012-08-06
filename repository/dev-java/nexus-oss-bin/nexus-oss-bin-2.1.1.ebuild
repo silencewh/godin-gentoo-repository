@@ -3,7 +3,7 @@ inherit eutils
 DESCRIPTION="Maven Repository Manager"
 HOMEPAGE="http://nexus.sonatype.org/"
 LICENSE="GPL-3"
-SRC_URI="http://nexus.sonatype.org/downloads/all/nexus-oss-webapp-${PV}-bundle.zip"
+SRC_URI="http://www.sonatype.org/downloads/nexus-${PV}-bundle.zip"
 RESTRICT="mirror"
 KEYWORDS="~x86 ~amd64"
 SLOT="0"
@@ -33,7 +33,7 @@ src_unpack() {
 
 src_install() {
     insinto ${WEBAPP_DIR}
-    doins -r nexus-oss-webapp-${PV}/*
+    doins -r nexus-${PV}/*
 
     newinitd "${FILESDIR}/init.sh" nexus
 
