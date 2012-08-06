@@ -1,8 +1,0 @@
-#summary News
-#labels Featured
-
- * *2010-05-04* New ebuild: dev-util/webstorm
- * *2010-04-30* New ebuild: dev-java/jlint
- * *2010-04-22* New ebuild: dev-java/mvnsh-bin
- * *2010-04-18* New ebuilds: dev-util/hudson-bin, dev-util/sonar-bin, dev-java/nexus-oss-bin
- * *2010-04-11* Initial commit
