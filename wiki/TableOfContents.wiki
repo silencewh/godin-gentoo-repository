@@ -4,4 +4,3 @@
  * Ebuilds
   * [Sonar Install Sonar]
   * [Jenkins Install Jenkins]
-  * [Missing List of missing packages]
